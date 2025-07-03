@@ -1,8 +1,8 @@
 <?php
-$host = getenv("MYSQLHOST") ?: "localhost";
-$user = getenv("MYSQLUSER") ?: "root";
-$pass = getenv("MYSQLPASSWORD") ?: "FZWTQGznvwDTcRYdRvWVOrezJRvjMKqm";
-$dbname = getenv("MYSQLDATABASE") ?: "keuangan_db";
+$host = getenv("MYSQLHOST");
+$user = getenv("MYSQLUSER");
+$pass = getenv("MYSQLPASSWORD");
+$dbname = getenv("MYSQLDATABASE");
 
 $conn = new mysqli($host, $user, $pass, $dbname);
 if ($conn->connect_error) {
