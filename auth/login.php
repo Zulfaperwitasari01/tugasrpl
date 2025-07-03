@@ -2,7 +2,7 @@
 session_start();
 include '../config/db.php';
 
-// Tampilkan error (bisa di-nonaktifkan di production)
+/
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
