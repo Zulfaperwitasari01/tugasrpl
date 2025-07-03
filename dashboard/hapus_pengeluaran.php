@@ -21,17 +21,16 @@ if ($id) {
     $id = intval($id);
     $user_id = intval($_SESSION['user_id']);
 
-    // Cari data pengeluaran
+    
     $cek = $conn->query("SELECT * FROM pengeluaran WHERE id = $id AND user_id = $user_id");
     if ($cek && $cek->num_rows > 0) {
         $data = $cek->fetch_assoc();
         $kategori_id = intval($data['kategori_id']);
         $nominal = floatval($data['nominal']);
 
-        // Hapus pengeluaran
         $conn->query("DELETE FROM pengeluaran WHERE id = $id");
 
-        // Kembalikan saldo kategori
+      
         $conn->query("UPDATE kategori SET saldo = saldo + $nominal WHERE id = $kategori_id");
     }
 }
