@@ -1,3 +1,3 @@
 <?php
-header("Location: auth/login.php");
+header("Location: dashboard/index1.php");
 exit;
