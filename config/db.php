@@ -1,7 +1,7 @@
 <?php
 $host = getenv("MYSQLHOST") ?: "localhost";
 $user = getenv("MYSQLUSER") ?: "root";
-$pass = getenv("MYSQLPASSWORD") ?: "";
+$pass = getenv("MYSQLPASSWORD") ?: "FZWTQGznvwDTcRYdRvWVOrezJRvjMKqm";
 $dbname = getenv("MYSQLDATABASE") ?: "keuangan_db";
 
 $conn = new mysqli($host, $user, $pass, $dbname);
