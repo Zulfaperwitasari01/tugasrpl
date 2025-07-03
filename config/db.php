@@ -2,7 +2,7 @@
 $host = getenv("MYSQLHOST");
 $user = getenv("MYSQLUSER");
 $pass = getenv("MYSQLPASSWORD");
-$dbname = getenv("MYSQL_DATABASE"); /
+$dbname = getenv("MYSQL_DATABASE"); 
 
 $conn = new mysqli($host, $user, $pass, $dbname);
 if ($conn->connect_error) {
