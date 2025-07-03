@@ -1,5 +1,5 @@
 <?php
-$host = "db";              
+$host = "tugasrpl";              
 $user = "root";           
 $pass = "root";           
 $dbname = "keuangan_db";  
